@@ -1,0 +1,53 @@
+:root {
+  --PRIMARY: #2a2d3e;
+  --color-primary: #f9f9f9;
+  --color-secondary: #333;
+  --color-tertiary: #f4f4f4;
+  --color-quaternary: #333;
+  --color-quinary: #333;
+  --color-senary: #333;
+  --color-septenary: #333;
+  --color-octonary: #333;
+  --color-nonary: #333;
+  --color-denary: #333;
+  --color-light: #f4f4f4;
+  --color-dark: #333;
+  --color-danger: #ff4136;
+  --color-success: #2ecc40;
+  --color-warning: #ff851b;
+  --color-info: #0074d9;
+  --color-link: #0074d9;
+  --color-link-hover: #0056b3;
+  --color-link-visited: #440099;
+  --color-link-active: #ff4136;
+  --color-link-focus: #ff851b;
+  --color-link-disabled: #ccc;
+  --color-link-text: #0074d9;
+  --color-link-text-hover: #0056b3;
+  --color-link-text-visited: #440099;
+  --color-link-text-active: #ff4136;
+  --color-link-text-focus: #ff851b;
+  --color-link-text-disabled: #ccc;
+  --color-link-background: #0074d9;
+  --color-link-background-hover: #0056b3;
+  --color-link-background-visited: #440099;
+  --color-link-background-active: #ff4136;
+  --color-link-background-focus: #ff851b;
+  --color-link-background-disabled: #ccc;
+  --color-link-border: #0074d9;
+  --color-link-border-hover: #0056b3;
+  --color-link-border-visited: #440099;
+  --color-link-border-active: #ff4136;
+  --color-link-border-focus: #ff851b;
+  --color-link-border-disabled: #ccc;
+  --color-link-shadow: #0074d9;
+  --color-link-shadow-hover: #0056b3;
+  --color-link-shadow-visited: #440099;
+  --color-link-shadow-active: #ff4136;
+  --color-link-shadow-focus: #ff851b;
+}
+
+h1 {
+  background-color: var(--PRIMARY);
+  padding: 50px;
+}
