@@ -1,5 +1,7 @@
 :root {
-  --PRIMARY: #2a2d3e;
+  --PRIMARY: #1b1c27;
+  --SECONDARY: #232432;
+
   --color-primary: #f9f9f9;
   --color-secondary: #333;
   --color-tertiary: #f4f4f4;
@@ -9,13 +11,14 @@
   --color-septenary: #333;
   --color-octonary: #333;
   --color-nonary: #333;
-  --color-denary: #333;
+  --color-denary: #d9d9d990;
   --color-light: #f4f4f4;
-  --color-dark: #333;
+  --color-dark: #858585;
   --color-danger: #ff4136;
   --color-success: #2ecc40;
   --color-warning: #ff851b;
   --color-info: #0074d9;
+  --color-info-light: #4695da;
   --color-link: #0074d9;
   --color-link-hover: #0056b3;
   --color-link-visited: #440099;
@@ -45,9 +48,4 @@
   --color-link-shadow-visited: #440099;
   --color-link-shadow-active: #ff4136;
   --color-link-shadow-focus: #ff851b;
-}
-
-h1 {
-  background-color: var(--PRIMARY);
-  padding: 50px;
 }

@@ -1,0 +1,139 @@
+
+/* ============================================= */
+/* =================== IMPORTS ================= */
+/* ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Importing typography */
+@import url('import/color.css'); /* Importing colors */
+@import url('import/reset.css'); /* Importing resets */
+
+
+
+
+/* ============================================= */
+/* ================== GENERAL ================== */
+/* ============================================= */
+
+body {
+  background-color: var(--SECONDARY);
+  color: var(--color-denary);
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* ============================================= */
+/* =================== HEADER ================== */
+/* ============================================= */
+
+header {
+  background-color: var(--PRIMARY);
+  padding: 1rem;
+  text-align: center;
+  outline: 4px ;
+  border-bottom: 1px solid var(--color-warning);
+  height: 110px;
+}
+
+header .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid lightseagreen; */
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--color-warning);
+}
+
+header .title span.cyber,
+header .title span.lord,
+header .title span.com {
+  color: var(--color-info-light);
+  text-transform: uppercase;
+}
+
+
+
+/* ============================================= */
+/* =================== NAVBAR ================== */
+/* ============================================= */
+
+nav {
+  background-color: var(--PRIMARY);
+  padding: 1rem;
+  text-align: center;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid var(--color-dark);
+  /* border-bottom: 1px solid var(--color-warning); */
+  /* box-shadow: 0 1px 4px var(--color-warning); */
+}
+
+nav .lead ul,
+nav .tail ul {
+  /* border: 1px solid lightgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+nav .lead li,
+nav .tail li {
+  list-style: none;
+  height: 100%;
+}
+
+nav .lead a,
+nav .tail a {
+  text-decoration: none;
+  height: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+
+
+/* ============================================= */
+/* ==================== MAIN =================== */
+/* ============================================= */
+
+main {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+
+
+/* ============================================= */
+/* =================== FOOTER ================== */
+/* ============================================= */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--PRIMARY);
+  padding: 2rem;
+  text-align: center;
+}
+
+footer span.year {
+  color: var(--color-warning);
+}
+
+footer p {
+  font-size: 0.8rem; 
+  padding-top: 8px; 
+}
