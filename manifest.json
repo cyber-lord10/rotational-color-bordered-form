@@ -1,0 +1,19 @@
+{
+  "name": "Rotational Color Bordered Form",
+  "short_name": "ColorForm",
+  "description": "A web app with a rotational color bordered form.",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "assets/images/icons/me.jpeg",
+    "128": "assets/images/icons/me.jpeg"
+  },
+  "start_url": "/signup.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "permissions": [
+    "storage",
+    "notifications"
+  ]
+}

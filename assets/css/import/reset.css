@@ -12,6 +12,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   text-transform: capitalize;
   border: none;
@@ -20,6 +24,4 @@ button {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
 }
