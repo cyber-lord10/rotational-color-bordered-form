@@ -1,17 +1,21 @@
 {
+  "id": "http://127.0.0.1/rotational-color-bordered-form/",
   "name": "Rotational Color Bordered Form",
   "short_name": "ColorForm",
   "description": "A web app with a rotational color bordered form.",
-  "version": "1.0.0",
-  "manifest_version": 2,
-  "icons": {
-    "48": "assets/images/icons/me.jpeg",
-    "128": "assets/images/icons/me.jpeg"
-  },
-  "start_url": "/signup.html",
+  "start_url": "/home.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#232432",
+  "theme_color": "#1b1c27",
+  "orientation": "portrait-primary",
+  "version": "1.0.0",
+  "icons": [
+    {
+      "src" : "/assets/images/logos/cybertron.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    }
+  ],
   "permissions": [
     "storage",
     "notifications"
