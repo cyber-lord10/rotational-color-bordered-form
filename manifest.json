@@ -3,7 +3,7 @@
   "name": "Rotational Color Bordered Form",
   "short_name": "ColorForm",
   "description": "A web app with a rotational color bordered form.",
-  "start_url": "/home.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#232432",
   "theme_color": "#1b1c27",
