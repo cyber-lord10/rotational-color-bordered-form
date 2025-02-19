@@ -1,0 +1,83 @@
+
+/* ============================================= */
+/* ============= MEDIA QUERIES ================= */
+/* ============================================= */
+
+/* =============== NAV BREAKPOINTS ================ */
+@media screen and (max-width: 1235px) {
+  nav .lead li.sponsor {
+    display: none;
+  }
+  nav .lead li.more li.sponsor {
+    display: block;
+  }
+  nav .lead li.more .divider {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1187px) {
+  nav .lead li.community {
+    display: none;
+  }
+  nav .lead li.more li.community {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  nav .lead li.faq {
+    display: none;
+  }
+  nav .lead li.more li.faq {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  nav .lead li.contact {
+    display: none;
+  }
+  nav .lead li.more li.contact {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 932px) {
+  nav .lead li.services {
+    display: none;
+  }
+  nav .lead li.more li.services {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  nav .lead li.about {
+    display: none;
+  }
+  nav .lead li.more li.about {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav .lead li.about {
+    display: none;
+  }
+  nav .lead li.more li.about {
+    display: block;
+  }
+  nav .lead,
+  nav .tail {
+    display: none;
+  }
+  nav .lead-tablet,
+  nav .tail-tablet {
+    display: block;
+  }
+  header h1 {
+    font-size: 1.6rem;
+    padding: 15px 14px;
+  }
+}

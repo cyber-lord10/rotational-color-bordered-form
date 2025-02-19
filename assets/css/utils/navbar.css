@@ -1,0 +1,181 @@
+
+/* ============================================= */
+/* =================== NAVBAR ================== */
+/* ============================================= */
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--PRIMARY);
+  padding: 1rem;
+  text-align: center;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  z-index: 2;
+}
+
+nav .lead > ul,
+nav .tail > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+nav .lead li,
+nav .tail li {
+  list-style: none;
+  height: 100%;
+}
+
+nav .lead a,
+nav .tail a {
+  text-decoration: none;
+  height: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+nav .lead a:hover,
+nav .tail a:hover,
+nav .lead a:focus,
+nav .tail a:focus {
+  color: var(--color-warning);
+}
+
+nav .lead span,
+nav .tail span {
+  padding: 4px 0;
+  border: 2.5px solid transparent;
+}
+
+nav .lead a.active span,
+nav .tail a.active span {
+  border-bottom-color: var(--color-warning);
+  color: var(--color-warning);
+}
+
+nav li.more,
+nav li.more a > span {
+  position: relative;
+}
+
+nav li.more svg {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 3px);
+  bottom: 0; 
+}
+
+nav li.more a:hover svg {
+  fill: var(--color-warning);
+}
+
+nav li.more ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: fit-content;
+  background-color: var(--PRIMARY);
+  border-radius: 0 0 15px 15px;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+nav li.more ul li a {
+  text-transform: capitalize;
+  justify-content: start;
+  border: 1px solid transparent;
+}
+
+  /* border-bottom-color: var(--color-warning); */
+
+nav li.more ul li a:hover:not(.active),
+nav li.more ul li a:focus:not(.active) {
+  color: var(--color-warning);
+  opacity: 0.65;
+}
+
+nav li.more ul li a.active {
+  color: var(--color-warning);
+  font-weight: bold;
+}
+
+nav li.more ul .divider {
+  border: 1px solid var(--color-warning);
+  margin: 0.35rem 0;
+  opacity: 0.5;
+}
+
+/* ------ Tablet view --------- */
+nav .lead-tablet,
+nav .tail-tablet {
+  display: none;
+}
+
+nav button {
+  background-color: transparent;
+  display: block;
+  height: 100%;
+  padding: 12px 14px;
+}
+
+nav .lead-tablet svg,
+nav .tail-tablet svg {
+  fill: var(--color-denary);
+  width: 35px;
+  height: 35px;
+}
+
+nav button.lead-tablet:hover svg,
+nav .tail-tablet button:hover svg,
+nav button.lead-tablet:focus svg,
+nav .tail-tablet button:focus svg {
+  fill: var(--color-warning);
+}
+
+nav .tail-tablet .profile {
+  display: flex !important;
+  justify-content: end !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  /* transition: 2s width;
+  width: 120px;
+  overflow: hidden; 
+  */
+  display: none;
+}
+
+nav .tail-tablet .profile a {
+  color: inherit
+}
+
+
+
+
+/* Setting nav components to their default state __(Initally Large Screens)__ */
+
+/* Hiding mobile (phone and tablet) design elements on initial state */
+
+nav .lead li.more li.services,
+nav .lead li.more li.contact,
+nav .lead li.more li.faq,
+nav .lead li.more li.community,
+nav .lead li.more li.sponsor,
+nav li.more ul .divider,
+nav li.more ul,
+nav .lead-tablet,
+nav .tail-tablet,
+nav .lead-phone,
+nav .tail-phone {
+  display: none;
+}

@@ -1,0 +1,23 @@
+
+/* ============================================= */
+/* =================== FOOTER ================== */
+/* ============================================= */
+
+footer {
+  position: sticky;
+  bottom: -45px;
+  width: 100%;
+  background-color: var(--PRIMARY);
+  padding: 1.5rem;
+  text-align: center;
+  height: 100px;
+}
+
+footer span.year {
+  color: var(--color-warning);
+}
+
+footer p {
+  font-size: 0.8rem; 
+  padding-top: 8px; 
+}

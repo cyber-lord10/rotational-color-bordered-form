@@ -1,0 +1,24 @@
+:root {
+  /* 
+   * The length for the individual nav items
+   * is calculated by the length of the text
+   * in the nav items.
+   */
+
+  --MAX-EXPECTED-LEN: 1235px;
+  --NAV-GAP: 240px;
+
+  /* 
+    * Wont be used since at least 3 
+    * nav links/elements should be left 
+    * for visually appealing appearance
+    */
+
+
+  --ABOUT-LEN: 45px; 
+  --SERVICES-LEN: 69px;
+  --CONTACT-LEN: 69px;
+  --FAQ-LEN: 30px;
+  --COMMUNITY-LEN: 95px;
+  --SPONSOR: 74px;
+}

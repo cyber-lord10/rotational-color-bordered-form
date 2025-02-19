@@ -1,0 +1,35 @@
+
+/* ============================================= */
+/* =================== HEADER ================== */
+/* ============================================= */
+
+header {
+  background-color: var(--PRIMARY);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  outline: 4px ;
+  opacity: 0.8;
+  /* height: 110px; */
+}
+
+header .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--color-warning);
+}
+
+header .title span.cyber,
+header .title span.lord,
+header .title span.com {
+  color: var(--color-info-light);
+  text-transform: uppercase;
+}
+
+header .hidden {
+  visibility: hidden;
+}

@@ -1,0 +1,11 @@
+#1 distance between lead nav (regular links) and tail nav (uauth links) should not be less *295px*
+
+=> distance >= 250px
+
+** ====== INITIALS LENGTH ========= **
+About = 45px
+Services = 69px
+Contact = 69px
+FAQ = 30px
+Community = 95px
+Sponsor = 74px

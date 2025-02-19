@@ -1,0 +1,17 @@
+/* ============================================= */
+/* ================== GENERAL ================== */
+/* ============================================= */
+
+body {
+  background-color: var(--SECONDARY);
+  color: var(--color-denary);
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+@property --conic-angle {
+  syntax: '<angle>';
+  initial-value: 53deg;
+  inherits: false;
+}
