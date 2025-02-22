@@ -75,11 +75,12 @@ nav li.more svg {
   bottom: 0; 
 }
 
-nav li.more a:hover svg {
+nav li.more a:hover svg,
+nav li.more a:focus svg {
   fill: var(--color-warning);
 }
 
-nav li.more ul {
+nav .lead li.more ul {
   position: absolute;
   top: 100%;
   left: 0;
@@ -117,11 +118,6 @@ nav li.more ul .divider {
 }
 
 /* ------ Tablet view --------- */
-nav .lead-tablet,
-nav .tail-tablet {
-  display: none;
-}
-
 nav button {
   background-color: transparent;
   display: block;
@@ -144,19 +140,138 @@ nav .tail-tablet button:focus svg {
 }
 
 nav .tail-tablet .profile {
-  display: flex !important;
-  justify-content: end !important;
-  align-items: center !important;
-  flex-direction: row !important;
-  /* transition: 2s width;
-  width: 120px;
-  overflow: hidden; 
-  */
-  display: none;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row-reverse;
+  transition: width 2s ease-in-out;
+  height: 100%;
+  margin: auto;
+  background-color: var(--SECONDARY);
+  margin-right: -25px;
+}
+
+nav .tail-tablet .profile div {
+  display: inline-block;
 }
 
 nav .tail-tablet .profile a {
-  color: inherit
+  color: inherit;
+  padding: 1.15rem 0.75rem;
+  display: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav .tail-tablet .profile a:hover,
+nav .tail-tablet .profile a:focus {
+  color: var(--color-warning);
+}
+
+nav .tail-tablet .profile .close {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 3.125rem;
+  bottom: 0;
+}
+
+nav .tail-tablet .profile .close button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 2.25rem;
+  color: var(--color-warning);
+  background-color: var(--SECONDARY);
+}
+
+nav .tail-tablet .profile .close button:hover,
+nav .tail-tablet .profile .close button:focus {
+  opacity: 0.75;  
+}
+
+
+
+/* ------ Phone view --------- */
+.nav__phone--modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #1b1c2720;
+  backdrop-filter: blur(10px);
+}
+
+.nav__content {
+  color: inherit;
+  width: min(100%, 250px);
+  height: 100%;
+  background-color: var(--PRIMARY);
+  box-shadow: 0 0 8px rgba(255, 133, 27, 0.2);
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 3rem;
+}
+
+.nav__phone--modal .close {
+  position: sticky;
+  top: 0;
+  height: 60px;
+}
+
+.nav__phone--modal .close button {
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--color-warning);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.25rem 0 auto;
+}
+
+.nav__phone--modal .close button:hover,
+.nav__phone--modal .close button:focus {
+  color: rgba(255, 133, 27, 0.785);
+}
+
+.nav__content a {
+  display: block;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.05rem;
+}
+
+.nav__content li.more ul a {
+  padding-left: calc(20px + 2rem);
+}
+
+.nav__content a.active {
+  color: var(--color-warning);
+  font-weight: 800;
+}
+
+.nav__content a:not(a.active):hover,
+.nav__content a:not(a.active):focus {
+  color: var(--color-warning);
+}
+
+.nav__content a span {
+  padding: 4px 0;
+  border: 2.5px solid transparent;
+}
+
+.nav__content a.active span {
+  border-bottom-color: var(--color-warning);
 }
 
 
@@ -174,8 +289,11 @@ nav .lead li.more li.sponsor,
 nav li.more ul .divider,
 nav li.more ul,
 nav .lead-tablet,
-nav .tail-tablet,
-nav .lead-phone,
-nav .tail-phone {
+nav .tail-tablet ,
+.nav__content li.more > a .icon-up,
+nav .lead svg .icon-down,
+nav .nav__phone--modal,
+nav .tail-tablet .profile,
+.nav__phone--modal {
   display: none;
 }
