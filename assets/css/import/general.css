@@ -10,6 +10,103 @@ body {
   min-height: 100vh;
 }
 
+.divider-1 {
+  border-bottom: 1px solid var(--color-warning);
+}
+
+.divider-2 {
+  border-bottom: 2px solid var(--color-warning);
+}
+
+.divider-3 {
+  border-bottom: 3px solid var(--color-warning);
+}
+
+.divider-4 {
+  border-bottom: 4px solid var(--color-warning);
+}
+
+.divider-5 {
+  border-bottom: 5px solid var(--color-warning);
+}
+
+.divider-6 {
+  border-bottom: 6px solid var(--color-warning);
+}
+
+.divider-7 {
+  border-bottom: 7px solid var(--color-warning);
+}
+
+.divider-8 {
+  border-bottom: 8px solid var(--color-warning);
+}
+
+.divider-9 {
+  border-bottom: 9px solid var(--color-warning);
+}
+
+.divider-10 {
+  border-bottom: 10px solid var(--color-warning);;
+}
+
+.spacer-1 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.spacer-2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.spacer-3 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.spacer-4 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.spacer-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.spacer-6 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.spacer-7 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.spacer-7 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.spacer-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.spacer-9 {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.spacer-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
 @property --conic-angle {
   syntax: '<angle>';
   initial-value: 53deg;

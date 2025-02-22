@@ -32,4 +32,5 @@ header .title span.com {
 
 header .hidden {
   visibility: hidden;
+  overflow: hidden;
 }
