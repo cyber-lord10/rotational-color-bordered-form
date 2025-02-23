@@ -281,6 +281,7 @@ nav .tail-tablet .profile .close button:focus {
 
 /* Hiding mobile (phone and tablet) design elements on initial state */
 
+nav .lead li.more li.about,
 nav .lead li.more li.services,
 nav .lead li.more li.contact,
 nav .lead li.more li.faq,

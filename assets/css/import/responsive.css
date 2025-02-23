@@ -4,6 +4,12 @@
 /* ============================================= */
 
 /* =============== NAV BREAKPOINTS ================ */
+@media sreen and (min-height: 1236px) {
+  nav .lead li.sponsor {
+
+  }
+}
+
 @media screen and (max-width: 1235px) {
   nav .lead li.sponsor {
     display: none;
@@ -62,12 +68,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  /* nav .lead li.about {
+  nav .lead li.about {
     display: none;
   }
   nav .lead li.more li.about {
     display: block;
-  } */
+  }
   nav .lead,
   nav .tail {
     display: none;

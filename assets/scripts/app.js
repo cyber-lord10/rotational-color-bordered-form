@@ -93,4 +93,12 @@ phoneDropdownToggle.addEventListener('click', () => {
 
 
 
-// 
+// Eliminate unnecessary double active for sponsor
+// const sponsorLg = document.querySelector('nav .lead > ul> li.sponsor a');
+// const sponsorSm = document.querySelector('nav .lead-phone > ul> li.sponsor a');
+// const curLoc = document.location.href;
+
+// if (curLoc.indexOf('sponsor.html') != -1) {
+//   sponsorLg.classList.remove('active');
+//   sponsorSm.classList.remove('active');
+// }
