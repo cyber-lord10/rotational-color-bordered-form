@@ -1,5 +1,5 @@
 {
-  "id": "http://127.0.0.1/rotational-color-bordered-form/",
+  "id": "http://border.unaux.com/",
   "name": "Rotational Color Bordered Form",
   "short_name": "ColorForm",
   "description": "A web app with a rotational color bordered form.",
@@ -11,9 +11,9 @@
   "version": "1.0.0",
   "icons": [
     {
-      "src" : "/assets/images/logos/cybertron.png",
+      "src" : "assets/images/logos/cybertron250x250.png",
       "type": "image/png",
-      "sizes": "72x72"
+      "sizes": "250x250"
     }
   ],
   "permissions": [
