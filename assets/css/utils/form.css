@@ -1,0 +1,208 @@
+
+/* ============================================= */
+/* ==================== FORM =================== */
+/* ============================================= */
+
+@property --input-angle {
+  syntax: '<angle>';
+  initial-value: 53deg;
+  inherits: false;
+}
+
+form {
+  padding: 1.5rem 2.2rem;
+}
+
+form h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    var(--color-info) 0%,
+    var(--color-info) 48%,  /* First color stops at 50% */
+    var(--color-warning) 58%,  /* Second color starts at 50% */
+    var(--color-warning) 100%
+  );
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  animation: form-title 4s linear infinite;
+}
+
+form h3 {
+  font-weight: 300;
+  opacity: 0.67;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+form h3::first-letter {
+  text-transform: capitalize;
+}
+
+form .input-box {
+  position: relative;
+  margin-bottom: 2.2em;
+  height: 45px;
+}
+
+form .input-box input {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid var(--color-info);
+  color: inherit;
+  z-index: 1;
+  outline: none;
+  transition: 0.5s ease;
+}
+
+form .input-box:nth-child(even) input {
+  border-bottom: 2px solid var(--color-warning);
+}
+
+form .input-box span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  background-color: var(--PRIMARY);
+  transition: 0.35s ease;
+}
+
+form .input-box input:focus:not(:user-invalid) {
+  border: 2px solid var(--color-info);
+  border-radius: 7px 4px;
+}
+
+form .input-box:nth-child(even) input:focus:not(:user-invalid) {
+  border: 2px solid var(--color-warning);
+}
+
+form .input-box input:focus + span {
+  background-image: var(--PRIMARY);
+  background-clip: padding-box;
+  height: fit-content;
+  backdrop-filter: blur(35px);
+}
+
+form .input-box input:user-invalid {
+  border: 1px solid var(--color-danger);
+  border-radius: 7px 4px;
+} 
+
+
+form .input-box input:focus + span,
+form .input-box input:user-valid + span,
+form .input-box input:valid + span {
+  transform: translateY(calc(-50% + 4px)) scale(0.8);
+  padding: 0 0.5rem;
+  border-radius: 7px 4px;
+  z-index: 2;
+  background-image: linear-gradient(
+    to right,
+    var(--color-info) 0%,
+    var(--color-info) 48%, 
+    var(--color-warning) 58%, 
+    var(--color-warning) 100%
+    );
+    height: fit-content;
+    background-clip: text;
+    backdrop-filter: blur(35px);
+    color: transparent;
+  }
+  
+  form .input-box input:user-invalid + span {
+    transform: translate(10px, calc(-50% + 4px)) scale(0.8);
+    padding: 0 0.5rem;
+    height: fit-content;
+    z-index: 2;
+    background-image: var(--PRIMARY);
+    background-clip: padding-box;
+    color: var(--color-danger);
+    backdrop-filter: blur(35px);
+  }
+  
+
+
+/* Form footer (auth links) */
+form .auth-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+form .auth-links a {
+  color: var(--color-warning);
+}
+
+form .auth-links a::first-letter {
+  text-transform: capitalize;
+}
+
+form .auth-links a:hover,
+form .auth-links a:focus {
+  opacity: 0.85;
+}
+
+form .submit-container {
+  padding: 1.25rem 1.5rem;
+  margin: 26px 0;
+
+}
+
+form .submit-container button {
+  width: 100%;
+  height: 45px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #053d6e;
+  background-image: linear-gradient(
+    45deg,
+    var(--color-warning),
+    var(--color-info)
+  );
+  box-shadow: 0 2px 9px -3px var(--color-info);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form .submit-container button:hover,
+form .submit-container button:focus {
+  box-shadow: 0 2px 9px -1px var(--color-info);
+}
+
+
+
+
+
+@keyframes form-title {
+  0% {background-position: left}
+  60% {background-position: right}
+  100% {background-position: left}
+}
+
+@keyframes form-input {
+  from {--input-angle: 53deg}
+  to {--input-angle: 52deg}
+}

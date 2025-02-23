@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rotational Color Bordered Form</title>
+  <title>Signup | Rotational Color Bordered Form</title>
 
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/cb5438b5f2.js" crossorigin="anonymous"></script>
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/utils/header.css" />
   <link rel="stylesheet" href="assets/css/utils/navbar.css" />
   <link rel="stylesheet" href="assets/css/utils/main.css" />
+  <link rel="stylesheet" href="assets/css/utils/form.css" />
   <link rel="stylesheet" href="assets/css/utils/footer.css" />
   <link rel="stylesheet" href="assets/css/import/responsive.css" />
 
@@ -230,34 +231,37 @@
 
   <!-- ============================== <main> *START* =================================== -->
   <main>
-    <form class="signup">
+    <form class="signup form">
       <h2>signup</h2>
       <h3>please fill in your information</h3>
       <div class="input-box">
-        <input id="name" name="name" />
+        <input type="text" id="name" name="name" required />
         <span>name</span>
       </div>
       <div class="input-box">
-        <input id="email" name="email" />
+        <input type="email" id="email" name="email" required />
         <span>email</span>
+        <!-- <div></div> -->
       </div>
       <div class="input-box">
-        <input id="phone" name="phone" />
+        <input type="tel" id="phone" name="phone" required />
         <span>phone</span>
       </div>
       <div class="input-box">
-        <input type="password" id="password" name="password" />
+        <input type="password" id="password" name="password" required />
         <span>password</span>
       </div>
       <div class="input-box">
-        <input type="password" id="repeat-password" name="repeat-password" />
-        <span>password</span>
+        <input type="password" id="repeat-password" name="repeat-password" required />
+        <span>repeat password</span>
+      </div>
+      <div class="submit-container">
+        <button type="submit">signup</button>
       </div>
       <div class="auth-links">
-        <a href="login.html">login</a>
-        <a href="forgot-password.html">forgot password</a>
+        <a href="signin.html">have an account</a>
+        <a href="about.html">about us</a>
       </div>
-      <button type="submit">submit</button>
     </form>
   </main>
   <!-- ============================== <main> *END* =================================== -->

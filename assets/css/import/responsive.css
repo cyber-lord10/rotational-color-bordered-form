@@ -62,12 +62,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  nav .lead li.about {
+  /* nav .lead li.about {
     display: none;
   }
   nav .lead li.more li.about {
     display: block;
-  }
+  } */
   nav .lead,
   nav .tail {
     display: none;

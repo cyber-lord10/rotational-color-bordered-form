@@ -14,7 +14,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  z-index: 2;
+  z-index: 4;
 }
 
 nav .lead > ul,
@@ -89,7 +89,7 @@ nav .lead li.more ul {
   border-radius: 0 0 15px 15px;
   padding: 0.5rem 0;
   overflow: hidden;
-  z-index: 2;
+  z-index: 4;
 }
 
 nav li.more ul li a {

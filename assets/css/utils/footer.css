@@ -11,6 +11,7 @@ footer {
   padding: 1.5rem;
   text-align: center;
   height: 100px;
+  z-index: 3;
 }
 
 footer span.year {

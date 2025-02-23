@@ -11,16 +11,18 @@ main {
   align-items: center;
 }
 
-main form.signup {
-  max-width: 400px;
+main form.signup,
+main form.signin {
+  width: min(100%, 400px);
   background-color: var(--PRIMARY);
-  padding: 1.2rem 1rem;
   position: relative;
   border-radius: 30px 5px;
 }
 
 main form.signup::after,
-main form.signup::before {
+main form.signup::before,
+main form.signin::after,
+main form.signin::before {
   content: '';
   position: absolute;
   inset: -5px;
@@ -34,13 +36,14 @@ main form.signup::before {
     transparent,
     var(--color-info)
   );
-  z-index: -1;
+  z-index: -3;
   animation: border-animation 4s linear 1s infinite normal forwards;
   border-radius: inherit;
 }
 
-main form.signup::before {
-  z-index: -2;
+main form.signup::before,
+main form.signin::before {
+  z-index: -4;
   filter: blur(3px);
   opacity: 0.8;
   animation: blur-effect 3.5s linear infinite 3.5s, glowing-border 3.5s linear infinite;
@@ -68,8 +71,12 @@ main form.signup::before {
 }
 
 /* ----- The placeholder for new developers to kicksatrt from */
-main .placeholder {
-  font-size: 80px;
+main form.form .placeholder {
+  font-weight: 800;
+  font-size: 6vw;
   text-align: center;
   color: rgb(40, 141, 196);
+  text-transform: capitalize;
+  /* word-break: break-all; */
+  width: min(100%,800px);
 }
